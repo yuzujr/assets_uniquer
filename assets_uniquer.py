@@ -42,6 +42,7 @@ def main(target_dir, dry_run=True):
             hashes.add(current_hash)
     
     # 处理重复文件
+    print("搜索文件夹:{}",target_dir)
     if duplicates:
         print("发现以下重复文件:")
         for dup in duplicates:
